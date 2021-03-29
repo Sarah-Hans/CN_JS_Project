@@ -8,6 +8,7 @@ $(document).ready(function(){
     })
     .done(function(data) {  
         console.log(data);
+        // affichage des articles
         data.items.forEach(function(element) {
             let Article = {
                 titre: element.title,
@@ -16,18 +17,22 @@ $(document).ready(function(){
                 contenu: element.content,
                 lien: element.link,
                 afficherPost: function() {
-                    return '<div class="one-post"><h3>' + this.titre + '</h3><p class="date">' + this.date + '</p> <p class="author">' + this.auteur + '</p><div class="post-content">' + this.contenu + '</div><div clas="learn-more"><button>En savoir plus</button></div></div>';
+                    return '<div class="one-post"><h3>' + this.titre + '</h3><p class="date">Publié le ' + this.date + '</p> <p class="author">Rédigé par ' + this.auteur + '</p><div class="post-content">' + this.contenu + '</div><div class="learn-more"><a href="' + this.lien + '" target="_blank"><button>En savoir plus</button></a></div></div>';
                 }
             };
 
-            $('.feed-content > h2').after(function() {
+            $('.feed-content').append(function() {
                 return Article.afficherPost();
             });
             $("p").filter(":contains('est apparu en premier sur')").remove();
         });
     })
-
+    //si erreur de chargement de l'API, ce message d'alerte s'affiche
     .fail(function(error){
         alert("La requête s'est terminée en échec. Infos : " + JSON.stringify(error));
+    });
+
+    $('.refresh > img').click(function() {
+        location.reload();
     });
 })
