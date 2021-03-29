@@ -1,10 +1,15 @@
 p {
     font-family: 'Open Sans', sans-serif;
     line-height: 25px;
+    font-size: 1em;
 }
 
 a {
     font-family: 'Open Sans', sans-serif;
+}
+
+.center {
+    text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -75,24 +80,74 @@ main {
 .intro {
     width: 100%;
     margin-bottom: 40px;
+    background-color: rgb(51, 92, 104);
 }
 
 .content-intro {
     width: 1080px;
     margin: auto;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .feed {
-    height: 500px;
+    width: 1080px;
+    margin: auto;
+}
+
+.feed-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.refresh {
+    text-align: right;
 }
 
 .feed-content {
     width: 1080px;
     margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
 
-.feed-content h2 {
-    text-align : center;
+.one-post {
+    border: 1px solid #333;
+    width: 480px;
+    margin: 10px 10px 10px 10px;
+    padding: 15px 15px 15px 15px;
+    height: auto;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.date {
+    margin-bottom: 0px;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.author {
+    margin-top: 0px;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.one-post button {
+    padding: 12px 12px 12px 12px;
+    background-color: rgb(51, 92, 104);
+    color: white;;
+    font-size : 1em;
+}
+
+.one-post button:hover {
+    background-color: rgb(60, 61, 61);
+    color: white;
 }
 
 footer {
