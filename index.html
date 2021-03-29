@@ -17,6 +17,7 @@
     <link href="plugins/skdslider-master/src/skdslider.css" rel="stylesheet">
     <script src="scripts/feed.js" defer></script>
     <script src="scripts/slider.js" defer></script>
+    <script src="scripts/menudropdown.js" defer></script>
 </head>
 <body>
     <header class="sticky">
@@ -28,13 +29,19 @@
             </div>
             <!--Menu-->
             <nav>
-                <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Catégories</a></li>
-                    <li><a href="pages/galerie.html">Galerie</a></li>
-                    <li><a href="pages/annuaire-eleveurs.html">Annuaire</a></li>
-                    <li><a href="pages/jeux.html">Jeux</a></li>
-                    <li><a href="pages/contact.html">Contact</a></li>
+                <a href="#">Accueil</a>
+                <div class="dropdown">
+                    <a onclick="myFunction()" class="dropbtn">Catégories</a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Santé</a>
+                        <a href="#">Naissances</a>
+                        <a href="#">Matériel</a>
+                    </div>
+                </div>
+                <a href="pages/galerie.html">Galerie</a>
+                <a href="pages/annuaire-eleveurs.html">Annuaire</a>
+                <a href="pages/jeux.html">Jeux</a>
+                <a href="pages/contact.html">Contact</a>
                 </ul>
             </nav>
     </header>
