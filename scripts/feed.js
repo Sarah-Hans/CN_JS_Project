@@ -9,18 +9,25 @@ $(document).ready(function(){
     .done(function(data) {  
         console.log(data);
         data.items.forEach(function(element) {
-            $('.feed-content > h2').after(function() {
-                return "<div><h3>" + element.title + "</h3>" + "<p>" + element.pubDate + "</p>" + "<p>" + element.author + "</p>" + "<p>" + element.description + "</p></div>"
-            });
-         });
+            let Article = {
+                titre: element.title,
+                date: element.pubDate,
+                auteur: element.author,
+                contenu: element.content,
+                lien: element.link,
+                afficherPost: function() {
+                    return '<div class="one-post"><h3>' + this.titre + '</h3><p class="date">' + this.date + '</p> <p class="author">' + this.auteur + '</p><div class="post-content">' + this.contenu + '</div><div clas="learn-more"><button>En savoir plus</button></div></div>';
+                }
+            };
 
+            $('.feed-content > h2').after(function() {
+                return Article.afficherPost();
+            });
+            $("p").filter(":contains('est apparu en premier sur')").remove();
+        });
     })
 
     .fail(function(error){
         alert("La requête s'est terminée en échec. Infos : " + JSON.stringify(error));
-    })
-
-    .always(function(){
-        alert("Requête effectuée");
     });
 })
