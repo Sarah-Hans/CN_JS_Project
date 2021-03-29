@@ -72,11 +72,6 @@ main {
     flex-wrap: wrap;
 }
 
-.slider {
-    height: 400px;
-    width: 100%;
-}
-
 .intro {
     width: 100%;
     margin-bottom: 40px;
@@ -89,6 +84,9 @@ main {
     color: white;
     padding-top: 20px;
     padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .feed {

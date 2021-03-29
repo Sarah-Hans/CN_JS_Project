@@ -12,8 +12,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
-    <script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer></script>
+    <script src="plugins/skdslider-master/src/skdslider.js" defer></script>
+    <link href="plugins/skdslider-master/src/skdslider.css" rel="stylesheet">
     <script src="scripts/feed.js" defer></script>
+    <script src="scripts/slider.js" defer></script>
 </head>
 <body>
     <header class="sticky">
@@ -36,13 +39,26 @@
             </nav>
     </header>
     <main>
-        <div class="slider">
-
+        <div id="slider" class="skdslider">
+            <div class="slide">
+                <img src="images/nice-2ansetdemi-1.jpg" alt="Nice 2">
+                <a href="#"><div class="slide-desc">
+                    <h2>S'informer sur l'élevage félin</h2>
+                    <p>Par des éleveurs, pour des éleveurs</p>
+                </div></a>
+            </div>
+            <div class="slide">
+                <img src="images/nice-accueil.jpg" alt="Nice">
+                <a href="#"><div class="slide-desc">
+                    <h2>Le British Longhair</h2>
+                    <p>Découvrez cette race de chat</p>
+                </div></a>
+            </div>
         </div>
         <div class="intro">
             <div class="content-intro">
-                <h1>L'élevage de chats British Longhair</h1>
-                <p>Cat ipsum dolor sit amet, lick the plastic bag but chase laser yet i just saw other cats inside the house and nobody ask me before using my litter box. Leave hair on owner's clothes. Fat baby cat best buddy little guy curl up and sleep on the freshly laundered towels. Sit as close as possible to warm fire without sitting on cold floor try to hold own back foot to clean it but foot reflexively kicks you in face, go into a rage and bite own foot, hard but lay on arms while you're using the keyboard good now the other hand, too so reaches under door into adjacent room. Oooo! dangly balls! jump swat swing flies so sweetly to the floor crash move on wash belly nap dont wait for the storm to pass, dance in the rain this is the day . If it fits, i sits slap owner's face at 5am until human fills food dish scratch at the door then walk away, for when owners are asleep, cry for no apparent reason.</p>
+               <div class="title"><h1>L'élevage de chats British Longhair</h1></div>
+                <div class="text-intro"><p>Cat ipsum dolor sit amet, lick the plastic bag but chase laser yet i just saw other cats inside the house and nobody ask me before using my litter box. Leave hair on owner's clothes. Fat baby cat best buddy little guy curl up and sleep on the freshly laundered towels. Sit as close as possible to warm fire without sitting on cold floor try to hold own back foot to clean it but foot reflexively kicks you in face, go into a rage and bite own foot, hard but lay on arms while you're using the keyboard good now the other hand, too so reaches under door into adjacent room. Oooo! dangly balls! jump swat swing flies so sweetly to the floor crash move on wash belly nap dont wait for the storm to pass, dance in the rain this is the day . If it fits, i sits slap owner's face at 5am until human fills food dish scratch at the door then walk away, for when owners are asleep, cry for no apparent reason.</p></div>
             </div>
         </div>
         <div class="feed">
