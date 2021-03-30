@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le matériel indispensable pour les éleveurs de chats</title>
+    <meta name="description" content="Retrouvez-ici des tests et conseils à propos du matériel indispensable de l'éleveur félin.">
+    <link href="../styles/style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../scripts/menudropdown.js" defer></script>
+    <script src="../scripts/sendpost.js" defer></script>
+</head>
+<body>
+    <header class="sticky">
+        <!--Barre de navigation-->
+            <!-- Logo du site -->
+            <div class="logo">
+                <a href="../index.html"><img src="../images/logo-site-elevage-blh.png" alt="Logo Elevage de British Longhair"></a>
+            </div>
+            <!--Menu-->
+            <nav>
+                <a href="../index.html">Accueil</a>
+                <div class="dropdown">
+                    <a onclick="myFunction()" class="dropbtn">Catégories &nbsp;<i class="fa fa-caret-down"></i></a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="sante.html">Santé</a>
+                        <a href="naissances.html">Naissances</a>
+                        <a href="materiel.html">Matériel</a>
+                    </div>
+                </div>
+                <a href="../pages/galerie.html">Galerie</a>
+                <a href="../pages/annuaire-eleveurs.html">Annuaire</a>
+                <a href="../pages/jeux.html">Jeux</a>
+                <a href="../pages/contact.html">Contact</a>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <div class="header-cat">
+            <h1>Le matériel indispensable pour tout éleveur de chats</h1>
+        </div>
+        <div class="intro-cat">
+            <p>Découvrez ici plusieurs articles dédiés au matériel de l'éleveur félin : des tests d'équipement ainsi que des conseils en matière de matériel essentiel pour les éleveurs de chats.</p>
+        </div>
+        <div id="form-post">
+            <h2>Postez un article à propos de matériel d'élevage que vous avez pu tester.</h2>
+            <form name="postform" id="post-article">
+                <div>
+                    <label for="auteur_article">Votre nom :</label><br>
+                    <input type="text" id="auteur_article" name="auteur" placeholder="Renseignez votre nom ou pseudo...">
+                </div>
+                <div>
+                    <label for="titre_article">Titre de l'article:</label><br>
+                    <input type="text" id="titre_article" name="titre" placeholder="Rédigez le titre de votre article...">
+                </div>
+                <div>
+                    <label for="text_article">Contenu de l'article :</label><br>
+                    <textarea id="text_article" name="contenu" placeholder="Rédigez ici votre article..."></textarea>
+                </div>
+                <div id="bouton-envoi">
+                    <button id="envoi_article">Publier</button>
+                </div>
+            </form>
+        </div>
+        <div class="titre-cat">
+            <h2>Les articles "Matériel" déjà publiés</h2>
+        </div>
+        <div class="articles-cat">
+
+        </div>
+    </main>
+    <footer>
+        <div class="liens">
+            <ul>
+                <li><a href="#">Catégories</a></li>
+                <li><a href="../pages/galerie.html">Galerie</a></li>
+                <li><a href="../pages/annuaire-eleveurs.html">Annuaire</a></li>
+                <li><a href="../pages/jeux.html">Jeux</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+                <li><a href="../pages/mentions-legales.html">Mentions Légales</a></li>
+            </ul>     
+        </div>
+        <div class="reseaux">
+            <p>Retrouvez-nous sur les réseaux sociaux :</p>
+            <ul>
+                <li><a href=""><img src="" alt="facebook"></a></li>
+                <li><a href=""><img src="" alt="instagram"></a></li>
+                <li><a href=""><img src="" alt="twitter"></a></li>
+            </ul>
+        </div>
+        <div class="copyright"><img src="" alt="logo"><p>Elevage de chats British Longhair - Copyright 2021</p></div>
+    </footer>
+</body>
+</html>

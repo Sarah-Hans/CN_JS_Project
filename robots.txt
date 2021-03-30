@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://www.elevage-british-longhair.fr/sitemap.xml
