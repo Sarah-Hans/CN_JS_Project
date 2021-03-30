@@ -280,6 +280,20 @@ input {
     color: white;
 }
 
+/*Galerie*/
+.intro-galerie {
+    width: 1080px;
+    margin: auto;
+}
+
+#galerie {
+    width: 1080px;
+    margin: auto;
+    display : flex;
+    flex-wrap: wrap;
+}
+
+/*Footer*/
 footer {
     background-color: rgb(51, 92, 104);
     display: flex;
