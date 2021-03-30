@@ -97,7 +97,6 @@ nav a:hover, .dropbtn:hover, .dropbtn:focus {
 
 }
 
-
 .show {
     display:block;
 }
@@ -114,6 +113,101 @@ main {
     width: 100%;
     margin-bottom: 40px;
     background-color: rgb(51, 92, 104);
+}
+.header-cat {
+    background-image: url('../images/slide-lovemedo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 20px;
+}
+.header-cat h1 {
+    font-size: 1.5em;
+    color: white;
+}
+
+.intro-cat {
+    width: 1080px;
+    margin: auto;
+}
+
+#form-post {
+    width: 1080px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+#form-post label {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#post-article {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+input {
+    width: auto;
+    min-width: 550px;
+    height: 30px;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    border-bottom: 1px solid #333;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#titre_article {
+    width: auto;
+    min-width: 550px;
+}
+
+#text_article {
+    width: auto;
+    min-width: 550px;
+    height: 400px;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #333;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+#bouton-envoi {
+    align-self: center;
+}
+
+#envoi_article {
+    padding: 15px;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    background-color:rgb(51, 92, 104);
+    color: white;
+    
+}
+
+.titre-cat {
+    width: 1080px;
+    margin: auto;
+}
+
+.articles-cat {
+    width: 1080px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .content-intro {
