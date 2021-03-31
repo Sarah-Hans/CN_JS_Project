@@ -1,3 +1,20 @@
+function affichage_mosaic(e) {
+    e.preventDefault()
+    document.querySelector('.galerie').classList.remove('galerie_column')
+    document.querySelector('.galerie').classList.add('galerie_mosaic')
+}
+
+function affichage_column(e) {
+    e.preventDefault()
+    document.querySelector('.galerie').classList.remove('galerie_mosaic')
+    document.querySelector('.galerie').classList.add('galerie_column')
+}
+
+const mosaic = document.querySelector('.affichage__mosaic').addEventListener('click', this.affichage_mosaic)
+const column = document.querySelector('.affichage__column').addEventListener('click', this.affichage_column)
+
+
+
 /**
  * @property {HTMLElement} element
  * @property {string[]} images Chemins des images de la lightbox
