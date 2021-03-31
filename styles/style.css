@@ -328,6 +328,7 @@ input {
 .galerie {
     width: 1080px;
     margin: auto;
+    margin-bottom: 50px;
 }
 
 .galerie_mosaic {
@@ -365,13 +366,18 @@ input {
 /*Footer*/
 footer {
     background-color: rgb(51, 92, 104);
+    color: white;
+    bottom: 0;
+}
+
+.footer-content {
+    width: 1080px;
+    margin: auto;
     display: flex;
     flex-direction : row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    color: white;
-    bottom: 0;
 }
 
 footer ul {
@@ -388,5 +394,9 @@ footer a:hover {
 }
 
 .copyright {
-    align-self : center;
+    width: 1080px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 20px;
+
 }
