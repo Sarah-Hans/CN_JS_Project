@@ -54,6 +54,10 @@ class Lightbox {
     onKeyUp(e) {
         if(e.key === 'Escape' ) {
             this.close(e)
+        } else if (e.key === 'ArrowRight') {
+            this.next(e)
+        } else if (e.key === 'ArrowLeft') {
+            this.prev(e)
         }
     }
     /**
@@ -89,10 +93,10 @@ class Lightbox {
         e.preventDefault()
         e.preventDefault()
         let i = this.images.findIndex(image => image === this.url) // variable index de l'image courante
-        if (i === 0) { // si on est à la dernière image, on recommence à la 1e
+        if (i === 0) { // si on est à la 1e image, on recommence à la dernière
             i = this.images.length
         }
-        this.loadImg(this.images[i - 1]) // on charge l'image qui se trouve à l'index + 1
+        this.loadImg(this.images[i - 1]) // on charge l'image qui se trouve à l'index - 1
     }
     /**
      * Constructeur de la structure html de la lightbox
