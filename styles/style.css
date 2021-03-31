@@ -313,6 +313,18 @@ input {
     cursor: pointer;
 }
 
+.ajout {
+    border : none;
+    background : url(../images/add.svg) center center / 100% 100% no-repeat;
+    width: 28px;
+    height: 28px;
+    justify-self: start;
+    text-indent: -6000px;
+    margin: 10px;
+    cursor: pointer;
+    margin-right: auto;
+}
+
 .galerie {
     width: 1080px;
     margin: auto;
@@ -359,6 +371,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     color: white;
+    bottom: 0;
 }
 
 footer ul {
