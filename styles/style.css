@@ -31,7 +31,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    z-index:1000;
+    z-index:5;
 }
 .sticky { position: -webkit-sticky; /* Safari */ position: sticky; top: 0; }
 
@@ -81,7 +81,7 @@ nav a:hover, .dropbtn:hover, .dropbtn:focus {
     top: 66px;
     background-color: #f1f1f1;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1000;
+    z-index: 5;
   }
 
 .dropdown-content a {
@@ -280,6 +280,31 @@ input {
     color: white;
 }
 
+/*Galerie*/
+.intro-galerie {
+    width: 1080px;
+    margin: auto;
+}
+
+.galerie {
+    width: 1080px;
+    margin: auto;
+    display : flex;
+    flex-wrap: wrap;
+}
+
+.galerie img {
+    transition: 1s;
+    padding: 15px;
+    width: 200px;
+}
+
+.galerie img:hover {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
+/*Footer*/
 footer {
     background-color: rgb(51, 92, 104);
     display: flex;
