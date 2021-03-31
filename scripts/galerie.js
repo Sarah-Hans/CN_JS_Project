@@ -1,19 +1,36 @@
-function affichage_mosaic(e) {
+/*
+Gestion de l'affichage en mosaique ou colonne
+*/
+    function affichage_mosaic(e) {
+        e.preventDefault()
+        document.querySelector('.galerie').classList.remove('galerie_column')
+        document.querySelector('.galerie').classList.add('galerie_mosaic')
+    }
+    
+    function affichage_column(e) {
+        e.preventDefault()
+        document.querySelector('.galerie').classList.remove('galerie_mosaic')
+        document.querySelector('.galerie').classList.add('galerie_column')
+    }
+    
+    const mosaic = document.querySelector('.affichage__mosaic').addEventListener('click', this.affichage_mosaic)
+    const column = document.querySelector('.affichage__column').addEventListener('click', this.affichage_column)
+
+/*
+Ajout d'une photo
+*/
+function ajout_photo(e) {
     e.preventDefault()
-    document.querySelector('.galerie').classList.remove('galerie_column')
-    document.querySelector('.galerie').classList.add('galerie_mosaic')
+    let url_img = prompt("Ajoutez l'url de l'image :");
+    const container_galerie = document.querySelector('.galerie') // sélection du container
+    const lien = document.createElement('a') // création d'un élément a
+    lien.setAttribute('href', url_img) // on ajoute l'attribut href avec la valeur de l'url
+    container_galerie.appendChild(lien) //on ajoute le lien au container galerie
+    const img = document.createElement('img') // on ajoute la balise image
+    img.setAttribute('src', url_img) // on lui  ajoute l'attribut de l'url rentrée
+    lien.appendChild(img) // on ajouter l'image au container lien
 }
-
-function affichage_column(e) {
-    e.preventDefault()
-    document.querySelector('.galerie').classList.remove('galerie_mosaic')
-    document.querySelector('.galerie').classList.add('galerie_column')
-}
-
-const mosaic = document.querySelector('.affichage__mosaic').addEventListener('click', this.affichage_mosaic)
-const column = document.querySelector('.affichage__column').addEventListener('click', this.affichage_column)
-
-
+const ajout = document.querySelector('.ajout').addEventListener('click', this.ajout_photo)
 
 /**
  * @property {HTMLElement} element
