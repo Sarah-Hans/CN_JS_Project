@@ -168,16 +168,4 @@ class Lightbox {
         return dom
     }
 }
-
-/*<div class="lightbox">
-        <button class="lightbox__close">Fermer</button>
-        <button class="lightbox__next">Suivant</button>
-        <button class="lightbox__prev">Précédent</button>
-        <div class="lightbox__container">
-            <img src="https://picsum.photos/id/237/300/600" alt="">
-        </div>
-    </div>*/
-
-
-//Initialisation de la Lightbox dès le chargement de la page
 Lightbox.init();

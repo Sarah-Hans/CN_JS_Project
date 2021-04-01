@@ -374,6 +374,26 @@ input {
     transform: scale(1.1);
 }
 
+/*Jeu*/
+.content_jeu {
+    width: 1080px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+label {
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#valid_choice {
+    padding: 10px;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    background-color:rgb(51, 92, 104);
+    color: white;
+}
+
 /*Footer*/
 footer {
     background-color: rgb(51, 92, 104);
