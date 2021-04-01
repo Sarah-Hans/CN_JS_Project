@@ -28,7 +28,6 @@ $(document).ready(function(){
       if (post !== null) {
           bouton_suppr.addEventListener('click', function(e) {
               e.preventDefault();
-              console.log(container)
               container.removeChild(post)
           })
       }

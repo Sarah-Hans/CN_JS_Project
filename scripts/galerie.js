@@ -25,12 +25,27 @@ function ajout_photo(e) {
     const container_galerie = document.querySelector('.galerie') // sélection du container
     const lien = document.createElement('a') // création d'un élément a
     lien.setAttribute('href', url_img) // on ajoute l'attribut href avec la valeur de l'url
+    lien.classList.add('img_man') // on ajoute une class img_man
     container_galerie.appendChild(lien) //on ajoute le lien au container galerie
     const img = document.createElement('img') // on ajoute la balise image
     img.setAttribute('src', url_img) // on lui  ajoute l'attribut de l'url rentrée
     lien.appendChild(img) // on ajouter l'image au container lien
+    const delete_img = document.createElement('button')
+    delete_img.setAttribute('class', 'bouton__suppr')
+    lien.after(delete_img)
+   /*
+    Suppression d'une photo ajoutée manuellement
+    */
+    if (lien !== null) {
+        delete_img.addEventListener('click', function(e) {
+            e.preventDefault();
+            container_galerie.removeChild(lien)
+            container_galerie.removeChild(delete_img)
+        })
+    }
 }
 const ajout = document.querySelector('.ajout').addEventListener('click', this.ajout_photo)
+
 
 /**
  * @property {HTMLElement} element
