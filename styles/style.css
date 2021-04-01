@@ -268,16 +268,27 @@ input {
     font-size: 0.9em;
 }
 
-.one-post button {
+.one-post .bouton-accueil {
     padding: 12px 12px 12px 12px;
     background-color: rgb(51, 92, 104);
     color: white;;
     font-size : 1em;
 }
 
-.one-post button:hover {
+.one-post .bouton-accueil:hover {
     background-color: rgb(60, 61, 61);
     color: white;
+}
+
+.bouton__suppr {
+    border : none;
+    background-color:transparent;
+    background : url(../images/delete.svg) center center / 100% 100% no-repeat;
+    width: 36px;
+    height: 36px;
+    text-indent: -6000px;
+    margin: 10px;
+    cursor: pointer;
 }
 
 /*Galerie*/

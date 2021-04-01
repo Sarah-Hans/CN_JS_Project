@@ -17,7 +17,7 @@ $(document).ready(function(){
                 contenu: element.content,
                 lien: element.link,
                 afficherPost: function() {
-                    return '<div class="one-post"><h3>' + this.titre + '</h3><p class="date">Publié le ' + this.date + '</p> <p class="author">Rédigé par ' + this.auteur + '</p><div class="post-content">' + this.contenu + '</div><div class="learn-more"><a href="' + this.lien + '" target="_blank"><button>En savoir plus</button></a></div></div>';
+                    return '<div class="one-post"><h3>' + this.titre + '</h3><p class="date">Publié le ' + this.date + '</p> <p class="author">Rédigé par ' + this.auteur + '</p><div class="post-content"><p>' + this.contenu + '</p></div><div class="learn-more"><a href="' + this.lien + '" target="_blank"><button class="bouton-accueil">En savoir plus</button></a></div></div>';
                 }
             };
 
