@@ -17,7 +17,6 @@ $(document).ready(function(){
         $('.articles-cat').append(function() {
             return Article.afficherPost();
         });
-
      /**
     * Suppression d'un article
     */
@@ -33,9 +32,4 @@ $(document).ready(function(){
       }
 
     });
-
-   
- 
-
-    
 })

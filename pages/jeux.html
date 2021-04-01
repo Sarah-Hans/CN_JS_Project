@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie photos de chats British Longhair</title>
+    <meta name="description" content="Découvrez des photos de magnifiques représentants de la race British Longhair, dans des couleurs très variée.">
+    <link href="../styles/style.css" rel="stylesheet">
+    <link href="../styles/lightbox.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../scripts/menudropdown.js" defer></script>
+    <script src="../scripts/jeu.js" defer></script>
+</head>
+<body>
+    <header class="sticky">
+        <!--Barre de navigation-->
+            <!-- Logo du site -->
+            <div class="logo">
+                <a href="../index.html"><img src="../images/logo-site-elevage-blh.png" alt="Logo Elevage de British Longhair"></a>
+            </div>
+            <!--Menu-->
+            <nav>
+                <a href="../index.html">Accueil</a>
+                <div class="dropdown">
+                    <a onclick="myFunction()" class="dropbtn">Catégories &nbsp;<i class="fa fa-caret-down"></i></a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="../categories/sante.html">Santé</a>
+                        <a href="../categories/naissances.html">Naissances</a>
+                        <a href="../categories/materiel.html">Matériel</a>
+                    </div>
+                </div>
+                <a href="galerie.html">Galerie</a>
+                <a href="annuaire-eleveurs.html">Annuaire</a>
+                <a href="jeux.html">Jeux</a>
+                <a href="contact.html">Contact</a>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <div class="content_jeu">
+            <h1>Jouer à Pierre/Papier/Ciseaux</h1>
+            <form name=choix>
+                <label for="user_choice">Faites votre choix (pierre, papier ou ciseaux) :</label><br>
+                <input type="text" id="user_choice" name="choice"><br>
+                <button id="valid_choice">Je joue</button>
+            </form>
+            <div class="jeu">
+                
+            </div>
+        </div>  
+    </main>
+    <!-- #footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="liens">
+                <ul>
+                    <li><a href="#">Catégories</a></li>
+                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="annuaire-eleveurs.html">Annuaire</a></li>
+                    <li><a href="jeux.html">Jeux</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                </ul>     
+            </div>
+            <div class="reseaux">
+                <p>Retrouvez-nous sur les réseaux sociaux :</p>
+                <ul>
+                    <li><a href=""><img src="" alt="facebook"></a></li>
+                    <li><a href=""><img src="" alt="instagram"></a></li>
+                    <li><a href=""><img src="" alt="twitter"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright"><img src="../images/logo-site-elevage-blh.png" alt="logo élevage british longhair"><p>Copyright 2021</p></div>
+    </footer>
+</body>
+</html>
