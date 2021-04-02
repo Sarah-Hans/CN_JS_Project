@@ -23,8 +23,11 @@ h1 {
 
 body { 
     margin: 0 0 0 0;
+    display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
-
+/*Header*/
 header { 
     width: 100%; 
     background-color: rgb(51, 92, 104);
@@ -107,13 +110,84 @@ main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    flex: 1;
 }
-
+/*accueil*/
 .intro {
     width: 100%;
     margin-bottom: 40px;
     background-color: rgb(51, 92, 104);
 }
+.content-intro {
+    width: 1080px;
+    margin: auto;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feed {
+    width: 1080px;
+    margin: auto;
+}
+
+.feed-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.refresh {
+    text-align: right;
+}
+
+.feed-content {
+    width: 1080px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.one-post {
+    border: 1px solid #333;
+    width: 480px;
+    margin: 10px 10px 10px 10px;
+    padding: 15px 15px 15px 15px;
+    height: auto;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.date {
+    margin-bottom: 0px;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.author {
+    margin-top: 0px;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.one-post .bouton-accueil {
+    padding: 12px 12px 12px 12px;
+    background-color: rgb(51, 92, 104);
+    color: white;;
+    font-size : 1em;
+}
+
+.one-post .bouton-accueil:hover {
+    background-color: rgb(60, 61, 61);
+    color: white;
+}
+/*catégorie*/
 .header-cat {
     background-image: url('../images/slide-lovemedo.jpg');
     background-size: cover;
@@ -135,7 +209,7 @@ main {
     width: 1080px;
     margin: auto;
 }
-
+/*ajout article*/
 #form-post {
     width: 1080px;
     margin: auto;
@@ -209,77 +283,7 @@ input {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
-.content-intro {
-    width: 1080px;
-    margin: auto;
-    color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.feed {
-    width: 1080px;
-    margin: auto;
-}
-
-.feed-intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.refresh {
-    text-align: right;
-}
-
-.feed-content {
-    width: 1080px;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-}
-
-.one-post {
-    border: 1px solid #333;
-    width: 480px;
-    margin: 10px 10px 10px 10px;
-    padding: 15px 15px 15px 15px;
-    height: auto;
-    display : flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.date {
-    margin-bottom: 0px;
-    font-style: italic;
-    font-size: 0.9em;
-}
-
-.author {
-    margin-top: 0px;
-    font-style: italic;
-    font-size: 0.9em;
-}
-
-.one-post .bouton-accueil {
-    padding: 12px 12px 12px 12px;
-    background-color: rgb(51, 92, 104);
-    color: white;;
-    font-size : 1em;
-}
-
-.one-post .bouton-accueil:hover {
-    background-color: rgb(60, 61, 61);
-    color: white;
-}
-
+/*suppression article*/
 .bouton__suppr {
     border : none;
     background-color:transparent;
@@ -381,6 +385,10 @@ input {
     padding-bottom: 50px;
 }
 
+.content_jeu h1 {
+    margin-bottom: 50px;
+}
+
 label {
     font-size: 1em;
     font-family: 'Open Sans', sans-serif;
@@ -392,7 +400,41 @@ label {
     font-family: 'Open Sans', sans-serif;
     background-color:rgb(51, 92, 104);
     color: white;
+    margin-top: 20px;
+    
 }
+/*Annuaire*/
+.content_annuaire {
+    width: 1080px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.elevage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.photo img {
+    width: 300px;
+    position: relative;
+    vertical-align: middle;
+}
+.description-elevage {
+    margin-left: 20px;
+}
+
+.lien_elevage {
+    padding: 15px;
+    background-color:rgb(51, 92, 104);
+    color: white;
+    text-decoration: none;
+    float: right;
+}
+
 
 /*Footer*/
 footer {
@@ -430,4 +472,30 @@ footer a:hover {
     text-align: center;
     padding-bottom: 20px;
 
+}
+.facebook {
+    border : none;
+    background : url(../images/facebook.svg) center center / 100% 100% no-repeat;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.twitter {
+    border : none;
+    background : url(../images/twitter.svg) center center / 100% 100% no-repeat;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.instagram {
+    border : none;
+    background : url(../images/instagram.svg) center center / 100% 100% no-repeat;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    cursor: pointer;
 }
